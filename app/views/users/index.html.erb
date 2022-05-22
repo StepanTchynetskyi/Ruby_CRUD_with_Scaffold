@@ -1,0 +1,39 @@
+<p style="color: green"><%= notice %></p>
+<h1>Data to perform CRUD Operations</h1>
+<div class="container">
+  <div class="create-btn-container">
+    <div class="btn-create">
+      <%= link_to  new_user_path, class: "btn-create-link" do %>
+        <i class="fa-solid fa-user-plus fa-xs create-icon"></i> Create New User
+      <%end%>
+    </div>
+  </div>
+  <div id="users">
+    <table>
+      <thead>
+        <tr>
+          <th id="th-id">ID</th>
+          <th id="th-username">Username</th>
+          <th id="th-email">Email</th>
+          <th id="th-password">Password</th>
+          <th colspan="3" id="th-crud-op">CRUD Operations</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @users.each do |user| %>
+          <% if user.id.even? %>
+            <tr class="white_row"><%= render "user_row", user: user%>
+            </tr>
+          <%else%>
+            <tr class="grey_row"><%= render "user_row", user: user%>
+            </tr>
+          <% end %>
+        <% end %>
+      </tbody>
+    </table>
+    <div class="btn-back"><a href="#" class="btn-back-link">Back</a></div>
+  </div>
+  <div class="footer">
+    <p class="footer-text">— Get more amazing projects in <a href="https://codewithbish.com">codewithbish.com</a></p>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div id="<%= dom_id user %>">
+  <td class="td-text">
+    <%= user.id %>
+  </td>
+  <td class="td-text">
+    <%= user.username %>
+  </td>
+  <td class="td-text">
+    <%= user.email %>
+  </td>
+  <td class="td-text">
+    <%= user.password %>
+  </td>
+  <td class="td-rud-btn">
+    <%= link_to  user ,class:"btn-view-link" do%>
+      <i class="fa-regular fa-eye fa-xs btn-view"><span class="rud-span">View</span></i>
+    <%end%>
+  </td>
+  <td class="td-rud-btn">
+    <%= link_to  edit_user_path(user.id) ,class:"btn-edit-link" do%>
+      <i class="fa-solid fa-pencil fa-xs btn-edit"><span class="rud-span">EDIT</span></i>
+    <%end%>
+  </td>
+  <td class="td-rud-btn">
+    <%= link_to  user ,class:"btn-delete-link", :method => :delete do%>
+      <i class="fa-regular fa-trash-can fa-xs btn-delete">
+        <span class="rud-span"> Delete</span>
+      </i>
+    <%end%>
+  </td>
+</div>

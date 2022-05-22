@@ -1,0 +1,247 @@
+body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.3em;
+  font-weight: 550;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #212529;
+}
+
+.create-btn-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.create-icon {
+  color: #151515;
+}
+.btn-create {
+  display: block;
+  justify-content: center;
+  border: 1px solid #151515;
+  padding: 12px 6px;
+  border-radius: 5px;
+}
+.btn-create-link {
+  color: #151515;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 100;
+  padding: 10px;
+}
+
+#users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+table,
+th,
+td {
+  border: 1px solid #939597;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  font-size: 1.3em;
+}
+th {
+  background-color: #212529;
+  color: white;
+}
+#th-id {
+  min-width: 60px;
+}
+#th-username {
+  min-width: 180px;
+}
+#th-password {
+  min-width: 180px;
+}
+#th-email {
+  min-width: 180px;
+}
+#th-crud-op {
+  text-align: center;
+  min-width: 390px;
+}
+.td-rud-btn {
+  justify-content: center;
+  align-items: center;
+}
+.td-text {
+  justify-content: left;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 1em;
+  vertical-align: top;
+}
+.btn-view {
+  background-color: #0d6efd;
+  min-width: 100px;
+  min-height: 40px;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+.btn-view-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  padding-left: 5px;
+}
+
+.btn-edit {
+  background-color: #6c757d;
+  min-width: 100px;
+  min-height: 40px;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+.btn-edit-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  padding-left: 5px;
+}
+.btn-delete {
+  background-color: #dc3545;
+  min-width: 100px;
+  min-height: 40px;
+  color: white;
+  font-weight: 100;
+  padding: 15px;
+  border-radius: 5px;
+}
+.btn-delete-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  font-size: 1.3em;
+  padding-left: 5px;
+}
+
+.white_row {
+  background: white;
+}
+.grey_row {
+  background: #f2f3f5;
+}
+
+.btn-back {
+  background: #ffc107;
+  padding: 13px;
+  border-radius: 7px;
+  min-width: 75px;
+
+  text-align: center;
+}
+.btn-back-link {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: 1.2em;
+}
+@media screen and (max-width: 995px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  #th-id {
+    min-width: 12px;
+  }
+  #th-username {
+    min-width: 90px;
+  }
+  #th-password {
+    min-width: 90px;
+  }
+  #th-email {
+    min-width: 90px;
+  }
+  #th-crud-op {
+    min-width: 150px;
+  }
+  th,
+  td {
+    padding: 5px;
+    font-size: 1em;
+  }
+  .btn-view {
+    min-width: 80px;
+    min-height: 20px;
+  }
+  .btn-view-link {
+    font-size: 1em;
+  }
+  .btn-edit {
+    min-width: 80px;
+    min-height: 20px;
+  }
+  .btn-edit-link {
+    font-size: 1em;
+  }
+  .btn-delete {
+    min-width: 80px;
+    min-height: 20px;
+  }
+  .btn-delete-link {
+    font-size: 1em;
+  }
+  .td-text {
+    font-size: 0.8em;
+  }
+  .btn-back {
+    padding: 10px;
+    min-width: 55px;
+  }
+  .btn-back-link {
+    font-size: 1em;
+  }
+  .footer {
+    margin-top: 30px;
+  }
+  .footer-text {
+    font-size: 1em;
+  }
+  .btn-create {
+    padding: 6px 3px;
+  }
+  .btn-create-link {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+}
+.rud-span {
+  padding-left: 3px;
+  font-weight: 100;
+}
